@@ -282,7 +282,7 @@ function maskSpan(src, failed) {
   if (failed) load.then((ok) => ok || failed());
   return m;
 }
-const pngIcons = new Set(["crush", "zcode", "alma", "hanako", "cindy", "typesafe", "atomcode", "snow", "mlx-serve"]);
+const pngIcons = new Set(["crush", "zcode", "alma", "hanako", "cindy", "typesafe", "atomcode", "snow", "mlx-serve", "mothx"]);
 
 function icon(name) {
   const kept = keptIcons?.get(name || "")?.shift();

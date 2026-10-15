@@ -565,6 +565,10 @@ var wslKinds = []wslKind{
 			}
 			return nil
 		}},
+	// MothX, formerly VibeCoding's vibecoding: its settings.json in ~/.mothx
+	{id: "mothx", name: "MothX", dir: ".mothx", bin: "mothx", in: mothxIn,
+		restart: newNotice("{agent} in WSL {distro} reads its settings at start-up — restart open mothx sessions to use this."),
+		asleep:  wslOwnAsleep("mothx", "model")},
 }
 
 // wslOwnAsleep is a stopped distro's options for an agent's model fields

@@ -154,6 +154,7 @@ var cliSpecs = map[string]cliSpec{
 			}
 			return nil
 		}},
+	"mothx":     {npm: []string{"mothx-installer"}},
 	"copilot":   {npm: []string{"@github/copilot"}, brew: []string{"copilot-cli"}},
 	"crush":     {npm: []string{"@charmland/crush"}, brew: []string{"crush"}},
 	"cline":     {npm: []string{"cline"}, brew: []string{"cline"}},

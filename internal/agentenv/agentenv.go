@@ -71,6 +71,8 @@ var Vars = []string{
 	"DEVECO_CONFIG_DIR",
 	// alma-server's data folder (Alma without a desktop, on Linux)
 	"ALMA_DATA_DIR",
+	// MothX's config folder
+	"MOTHX_DIR",
 	// Reasonix Studio and its native CLI share this config home
 	"REASONIX_HOME",
 	// Reasonix's state folder, where it reads REASONIX.md

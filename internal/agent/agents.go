@@ -100,6 +100,7 @@ func builtins(home, cfg string) []*Agent {
 		deveco(home, cfg),
 		pi(home),
 		stepcode(home),
+		mothx(home),
 		aside(home),
 		omo(home),
 		primeAgent(home),

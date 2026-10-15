@@ -429,6 +429,13 @@ func targetOf(a *agent.Agent) *Target {
 		// ProjectSettingsContent.context_servers, zed-industries/zed
 		// 2c99f547; lc on Discord)
 		t.MCP = &mcpFile{Path: a.Path, Format: fmtZed}
+	case "mothx":
+		// MothX reads its global instructions from the first of AGENTS.md,
+		// CLAUDE.md, … in ~/.mothx (contextfiles) and its skills from skills/
+		// there (platform.SkillsDir); its MCP servers are an array in
+		// mcp.json, a shape magpie has no writer for, so it takes none
+		t.Instructions = filepath.Join(a.Dir, "AGENTS.md")
+		t.Skills = filepath.Join(a.Dir, "skills")
 	case "claude-desktop":
 		// Claude Desktop reads only commands from its file: a remote server
 		// is added in its own Connectors settings. In its 3p mode (magpie's
